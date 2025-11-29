@@ -1,5 +1,3 @@
-// script.js
-
 // Ensure the code runs after the HTML document has fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Select DOM elements
@@ -25,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create a remove button for the task
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add('remove-btn'); // <-- updated here
 
         // Assign onclick event to remove the task when clicked
         removeButton.onclick = () => {
